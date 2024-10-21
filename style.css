@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    min-height: 600px;
+    background-image: linear-gradient(rgba(0, 238, 255, 0.899),rgba(0, 98, 255, 0.904)), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: contrast(1.5);
+    margin-bottom: 100px;
+    padding-top: 20px;
+}
+.header nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.323);
+    padding-left: 40px;
+}
+.header nav ul a li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 26px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+.header nav ul a li:hover {
+    background-color: rgba(0, 0, 0, 0.323);
+    color: rgba(255, 255, 255, 0.92);
+    transition: 0.5s;
+}
+.header h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 175px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 15px;
+}
+.overview {
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.overview .left {
+    margin-right: 100px;
+}
+.overview h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    border-bottom: 2px solid rgb(0, 136, 255);;
+    padding: 5px;
+}
+.overview p {
+    font-size: 20px;
+}
+.overview img {
+    width: 600px;
+    margin-top: 30px;
+}
+.overview .left img {
+    width: 16px;
+}
+.overview .left h2 {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.resources {
+    padding: 30px;
+    margin: 30px;
+    margin-top: 100px;
+}
+.resources h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    border-bottom: 2px solid rgb(0, 136, 255);;
+    padding: 5px;
+}
+.resources .zip {
+    margin-top: 20px;
+}
+.resources .zip p {
+    font-size: 20px;
+}
+.resources .zip a, .resources .example a {
+    max-width: 300px;
+    border: 2px solid rgb(0, 136, 255);
+    font-family: sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+    transition: 0.5s;
+}
+.resources .zip a:hover, .resources .example a:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 136, 255);
+    color: white;
+}
+.resources .example {
+    margin-top: 40px;
+}
+.resources .example p {
+    font-size: 20px;
+}
+.steps {
+    padding: 30px;
+    margin: 30px;
+    margin-top: 100px;
+}
+.steps .title {
+    display: flex;
+    align-items: center;
+}
+.steps .title h1 {
+    font-size: 50px;
+    background-color: rgb(0, 136, 255);
+    padding: 10px;
+    margin-right: 20px;
+    font-family: sans-serif;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.steps .title h2 {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.steps h3 {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.steps .area {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.steps .left {
+    margin-right: 100px;
+}
+.steps .right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.steps .right img {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.steps .area .left p {
+    font-size: 20px;
+}
+.steps .step {
+    margin-bottom: 100px;
+}
+.steps .step img {
+    width: 400px;
+}
+.steps .step b {
+    color: rgb(0, 136, 255);
+}
+.congrats {
+    margin-top: 100px;
+    padding: 30px;
+    margin: 30px;
+}
+.congrats h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    border-bottom: 2px solid rgb(0, 136, 255);;
+    padding: 5px;
+}
+.congrats p {
+    font-size: 20px;
+}
+/*Animate on Scroll*/
+.hidden {
+    opacity: 0;
+    scale: 0.75;
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+.show {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+}
+@media(max-width: 900px) {
+    .header nav {
+        display: none;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .overview {
+        flex-direction: column;
+        text-align: center;
+    }
+    .overview h1, .resources h1 {
+        font-size: 25px;
+    }
+    .overview .left h2 {
+        font-size: 20px;
+    }
+    .overview p {
+        font-size: 16px;
+    }
+    .resources {
+        text-align: center;
+    }
+    .resources .zip p, .resources .example p {
+        font-size: 16px;
+    }
+    .resources .zip a, .resources .example a {
+        font-size: 16px;
+    }
+    .steps .step h1 {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+    }
+    .steps .step h2 {
+        font-size: 30px;
+    }
+    .steps .step h3 {
+        font-size: 20px;
+    }
+    .steps .step .left p {
+        font-size: 16px;
+    }
+    .steps .step img {
+        width: 200px;
+    }
+    .congrats {
+        text-align: center;
+    }
+    .congrats h1 {
+        font-size: 25px;
+    }
+    .congrats p {
+        font-size: 16px;
+    }
+    .overview img {
+        width: 400px;
+    }
+    .steps .area {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .overview .left, .overview, .steps, .steps img {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .steps .title  {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .steps .title h1 {
+        margin-bottom: 15px;
+    }
+    .steps .step h3 {
+        text-align: center;
+    }
+    .steps .step .left p {
+        text-align: center;
+    }
+    .steps .right img {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .steps .left {
+        margin-right: 0px;
+    }
+    .steps .step .area {
+        padding: 20px;
+    }
+}

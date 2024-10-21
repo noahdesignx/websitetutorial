@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>How to Build a Website</title>
+  <link rel = "icon" href = "images/logo.webp">
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="https://kit.fontawesome.com/d6414831a3.js" crossorigin="anonymous"></script>
+  <script defer src = "animate.js"></script>
+</head>
+
+<body>
+
+    <section class = "home" id = "home">
+
+        <div class = "header">
+
+            <nav>
+        
+                    <ul>
+                        <a href = "#home"><li>Home</li></a>
+                        <a href = "#resources"><li>Resources</li></a>
+                        <a href = "#steps"><li>Steps</li></a>
+                    </ul>
+                
+            </nav>
+        
+            <h1 class = "hidden">HOW TO BUILD A WEBSITE<br>(HTML & CSS)</h1>
+        
+        </div>
+
+        <div class = "overview hidden">
+
+            <div class = "left">
+
+                <h1>OVERVIEW</h1><br>
+                <p>Websites are a great way to showcase your professional career or business. While creating a website is easier than ever before with all of the web development tools available to us, many of these tools limit you from customizing your website the way you want it to look like. The best way to avoid these restrictions is by programming the website yourself from scratch. Although it may initially sound intimidating, web development programming languages are really easy to learn. In this tutorial, you will learn how to use basic HTML and CSS to develop a photographer portfolio at a beginner level and host it online for free.
+                </p><br><br><br>
+
+                <h2>Web Development Languages:</h2><br>
+                
+                <p><img src = "images/html.png"></i> Hypertext Markup Language (HTML) is a markup language that acts as the skeleton or basic framework for a website.
+                </p><br>
+
+                <p><img src = "images/css.png"> Cascading Style Sheets (CSS) is a styling sheet language that decorates and formats the skeleton or basic framework of a website.</p><br>
+
+                <p><img src = "images/javascript.png"></i> JavaScript (JS) is a programming language that gives a website more advanced functionality, but for this tutorial, this will not be needed.</p>
+
+            </div>
+
+            <div class ="right">
+
+                <img src = "images/overview1.png">
+                <img src = "images/overview2.png">
+                <img src = "images/overview3.png">
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class = "resources hidden" id  ="resources">
+
+        <h1>Resources</h1>
+
+        <div class = "zip">
+
+            <p>You will need to download and unzip this folder in order to have access to the images you will manipulate in this tutorial.</p><br>
+
+            <a href="images.zip" download="images.zip">Download Zip File <i class = "fa fa-download"></i></a>
+
+        </div>
+
+        <div class = "example">
+
+            <p>Here is a link to the website you will be building in this tutorial.</p><br>
+
+            <a href = "https://noahdesignx.github.io/michelleflores/" target = "_blank">Website Portfolio  <i class = "fa fa-external-link"></i></a>
+
+        </div>
+
+    </section>
+
+    <section class = "steps" id = "steps">
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>1</h1>
+                <h2>Set Up Replit</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>You will need to create an account in Replit so that you have free access to an integrated development environment (IDE).
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                        1. Go to <a href = "https://replit.com/" target = "_blank">replit.com</a> <br><br>
+                        2. On the home page, click <b>Sign Up For Free</b> <br> <br>
+                        3. Follow the instructions to finish creating your account 
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step1.1.png" width ="400px">
+                </div>
+    
+            </div>
+
+        </div>
+
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>2</h1>
+                <h2>Create and Manage Project Files</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>You will create your main project file and upload the images needed for the website.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                        1. On your home dashboard, click <b>Create Repl</b><br><br>
+                        2. Select the template <b>HTML, CSS, JS</b> <br><br>
+                        3. Name your project <br><br>
+                        4. Click <b>Create</b> <br><br>
+                        5. In the file panel to the left, click on the three dots and then <b>Upload Folder</b> to upload the images folder that you were instructed to download earlier
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step2.1.png" width = "400px">
+                    <img src = "images/step2.2.png" width = "400px">
+                    
+                </div>
+    
+            </div>
+            
+        </div>
+
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>3</h1>
+                <h2>Set Website Name and Favicon</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>In the index.html file, you will update the name and icon of the website that shows in the browser tab. These changes will be made within the header tag.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                        1. In the title tag, name the website Michelle Flores <b>&lt;title&gt;Michelle Flores&lt;/title&gt;</b> <br><br>
+                        2. Below the title tag, add <b>&lt;link rel = "icon" href = "images/logo.png"&gt;</b> to set the favicon of the website to the logo image file
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step3.1.png" width = "400px">
+                    
+                </div>
+    
+            </div>
+            
+        </div>
+
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>4</h1>
+                <h2>Create Framework of Home Section</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>In the index.html file, you will create the framework of the home section of the website where the user can read the job title, navigate to different parts of the website, and contact their email address.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                        1. In the body tag, add <b>&lt;section class = "home" id = "home"&gt; &lt;/section&gt;</b> to create an area for the home section of the website <br><br>
+                        2. In this new section tag, add <b>&lt;nav&gt; &lt;/nav&gt;</b> to create an area for the navigation bar <br> <br>
+                        3. In the nav tag, add <b>&lt;img src = "images/logo.png&gt;</b> to place the logo image <br> <br>
+                        4. In the nav tag, add <b>&lt;ul&gt; &lt;/ul&gt; </b>to create an unordered list area for the tab links <br><br>
+                        5. Add all of the following tab links in the unordered list tag: <br> <br>
+                        <b>&lt;a href = "#home"&gt; &lt;li&gt; Home&lt;/li&gt;&lt;/a&gt; </b><br>
+                        <b>&lt;a href = "#about"&gt; &lt;li&gt; About&lt;/li&gt;&lt;/a&gt; </b><br>
+                        <b>&lt;a href = "#photos"&gt; &lt;li&gt; Photos&lt;/li&gt;&lt;/a&gt; </b> <br> <br>
+                        6. Outside the nav tag, add <b>&lt;h1&gt;Michelle Flores&lt;/h1&gt;</b> to display the name <br><br>
+                        7. Add <b>&lt;br&gt; &lt;/br&gt;</b> after the name tag to create a break or spacing on the page <br><br>
+                        8. Below the name tag, add <b>&lt;h2&gt; Photographer&lt;/h2&gt;</b> to display the job title <br> <br>
+                        9. Add <b>&lt;br&gt; &lt;/br&gt;</b> after the name tag to create a break or spacing on the page <br><br>
+                        10. Below the job tag, add <b>&lt;a href="mailto:michelle_flores@gmail.com" class = "email"&gt;michelle_flores@gmail.com&lt;/a&gt;</b> to display the email address and make it take the user directly to their mailbox
+
+
+                        
+                        
+
+
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step4.1.png" width = "400px">
+                    
+                </div>
+    
+            </div>
+            
+        </div>
+
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>5</h1>
+                <h2>Style Home Section</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>In the style.css file, you will format all of the content in the home section.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                        1. Get rid of the extra white space in the margins by adding the following block: <br> <br>
+
+                        <b>
+                            * { <br>
+                            margin: 0; <br>
+                            padding: 0; <br>
+                        }
+                        </b> <br> <br>
+                        2. Set the scroll behavior of the website to smooth by adding the following block: <br> <br>
+
+                        <b>
+                            html { <br>
+                                scroll-behavior: smooth; <br>
+                            }
+                            
+                        </b> <br> <br>
+
+                        3. For the header section, set the minimum height to 600 pixels, put the background image to the photographer image with a linear gradient, adjust the background size to cover the entire header, set the background position to the center, filter the background image with a contrast of 1.25, add 100 pixels of bottom margining, add 15 pixels of padding all on sides, and add an additional 30 pixels of padding to the left. The block of code should look like the following: <br> <br>
+
+                        <b>
+                            .home { <br>
+                                min-height: 600px; <br>
+                                background-image: linear-gradient(rgba(255, 255, 255, 0.559), <br>
+                                rgba(255, 255,  255, 0.793)), url(images/photographer.jpeg); <br>
+                                background-size: cover; <br>
+                                background-position: center; <br>
+                                filter: contrast(1.5); <br>
+                                margin-bottom: 100px; <br>
+                                padding: 15px; <br>
+                                padding-left: 30px; <br>
+                            }
+                            
+                        </b> <br><br>
+
+                        4. Display all elements in the navigation bar horizontally and in line with each other by adding the following block: <br><br>
+
+                        <b>
+                            .home nav { <br>
+                                display: flex; <br>
+                                align-items: center; <br>
+                            }
+                            
+                        </b> <br><br>
+
+                        5. Set the width of the logo to 75 pixels and add 15 pixels of margin to the right by adding the following block: <br><br>
+
+                        <b>
+                            .home nav img { <br>
+                                width: 75px; <br>
+                                margin-right: 10px; <br>
+                            }
+                            
+                        </b> <br><br>
+
+                        6. For each individual tab link, set the list style type to none, adjust the display to flex in line with each other, create a padding area of 26 pixels by 30 pixels, set the text color to black, adjust the text decoration to none, set the font size to 20 pixels, adjust the font family to sans-serif, and add a 0.5 second transition for when the user stops hovering their mouse over the tab. The block of code should look like the following: <br><br>
+
+                        <b>
+                            .home nav ul a li { <br>
+                                list-style-type: none; <br>
+                                display: inline-flex; <br>
+                                padding: 26px 30px; <br>
+                                color: rgb(0, 0, 0); <br>
+                                text-decoration: none; <br>
+                                font-size: 20px; <br>
+                                font-family: sans-serif; <br>
+                                transition: 0.5s; <br>
+                            }
+                            
+                        </b> <br><br>
+
+                        7. When the user hovers over a tab link, set it to where the background color changes to black while the text color changes to white within 0.5 seconds. The block of code should look like the following: <br><br>
+
+                        <b>
+                            .home nav ul a li:hover { <br>
+                                background-color: rgb(0, 0, 0); <br>
+                                color: rgba(255, 255, 255, 0.92); <br>
+                                transition: 0.5s; <br>
+                            }
+                            
+                        </b> <br><br>
+
+                        8. For the name tag, set the font size to 70 pixels, adjust the font family to sans-serif, and add 18 pixels of margin on the top. The block of code should look like the following: <br> <br>
+
+                        <b>
+                            .home h1 { <br>
+                                font-size: 70px; <br>
+                                font-family: sans-serif; <br>
+                                margin-top: 180px; <br>
+                            }
+                            
+                        </b> <br> <br>
+
+                        9. For the job tag, set the font size to 40 pixels, adjust the font family to sans-serif, and make the text color gray. The block of code should look like the following: <br><br>
+
+                        <b>
+                            .home h2 { <br>
+                                font-size: 40px; <br>
+                                font-family: sans-serif; <br>
+                                color: gray; <br>
+                            }
+                             
+                        </b> <br><br>
+
+                        10. For the email tag, set the font size to 20 pixels, adjust the font family to sans-serif, and make the text color gray. The block of code should look like the following: <br><br>
+
+                        <b>
+                            .home .email { <br>
+                                font-size: 20px; <br>
+                                font-family: sans-serif; <br>
+                                color: gray; <br>
+                            }
+                            
+                        </b>
+
+
+                        
+                        
+
+
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step5.1.png" width = "400px">
+                    <img src = "images/step5.2.png" width = "400px">
+                    <img src = "images/overview1.png" width = "400px">
+                </div>
+    
+            </div>
+            
+        </div>
+
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>6</h1>
+                <h2>Create Framework of About Section</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>In the index.html file, you will create the framework of the about section of the website where the user can read a brief description of the author.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                    1. In the body tag, add <b>&lt;section class = "about" id = "about"&gt; &lt;/section&gt;</b> to create an area for the about section of the website <br><br>
+                    2. In this new section tag, add <b>&lt;h1&gt;About &lt;/h1&gt;</b> to display the section title <br><br>
+                    3. Below this title tag, add <b>&lt;p&gt;lorem &lt;/p&gt;</b> to display the description. <br><br>
+                    4. Place your cursor at the end of <b>lorem</b> and click <b>TAB</b> to create placeholder text
+                        
+                        
+
+
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step6.1.png" width = "400px">
+                </div>
+    
+            </div>
+            
+        </div>
+
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>7</h1>
+                <h2>Style About Section</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>In the style.css file, you will format all of the content in the about section.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                    1. For the about section, set the minimum height to 400 pixels, add 15 pixels of padding on all sides, and add an additional 30 pixels of padding to the left. The block of code should look like the following: <br><br>
+
+                    <b>
+                        .about { <br>
+                            min-height: 400px; <br>
+                            padding-left: 30px; <br>
+                            padding: 15px; <br>
+                        } <br>
+                        
+                    </b> <br><br>
+
+                    2. For the section title, set the font size to 40 pixels and adjust the font family to sans-serif. The block of code should look like the following: <br><br>
+
+                    <b>
+                        .about h1 { <br>
+                            font-size: 40px; <br>
+                            font-family: sans-serif; <br>
+                        } <br>
+                        
+                    </b> <br><br>
+
+                    3. For the description text, set the font size to 20 pixels, adjust the font family to serif, and add 20 pixels of margin on the top. The block of code should look like the following: <br><br>
+
+                    <b>
+                        .about p { <br>
+                            font-size: 20px; <br>
+                            font-family: serif; <br>
+                            margin-top: 20px; <br>
+                        } <br>
+                        
+                    </b>
+                        
+                        
+
+
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step7.1.png" width = "400px">
+                    <img src = "images/overview2.png" width = "400px">
+                </div>
+    
+            </div>
+            
+        </div>
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>8</h1>
+                <h2>Create Framework of Photos Section</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>In the index.html file, you will create the framework of the photos section of the website where the user can view photos that the author has captured.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                    1. In the body tag, add <b>&lt;section class = "photos" id = "photos"&gt; &lt;/section&gt;</b> to create an area for the about section of the website <br><br>
+                    2. In this new section tag, add <b>&lt;h1&gt; Photos&lt;/h1&gt;</b> to display the section title <br><br>
+                    3. Below the section title, add <b>&lt;div class = "collage"&gt; Photos&lt;/div&gt;</b> to create an area for the photos <br><br>
+                    4. In this new div tag, add all of the following images: <br><br>
+                    <b>&lt;img src = "images/photo1.jpg" class = "photo1"&gt;</b><br>
+                    <b>&lt;img src = "images/photo2.jpg" class = "photo2"&gt;</b><br>
+                    <b>&lt;img src = "images/photo3.jpg" class = "photo3"&gt;</b>
+
+
+
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step8.1.png" width = "400px">
+                </div>
+    
+            </div>
+            
+        </div>
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>9</h1>
+                <h2>Style Photos Section</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>In the style.css file, you will format all of the content in the photos section.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                    1. The photos section will be formatted exactly like the about section. To avoid repeating the same steps you took to style the about section, you can instead include the photos section in the about section styling block, which should look like the following: <br><br>
+                    <b>
+                        .about, .photos { <br>
+                            min-height: 400px; <br>
+                            padding-left: 30px; <br>
+                            padding: 15px; <br>
+                        } <br>
+                        
+                    </b> <br> <br>
+
+                    2. You will format the title for the photos section exactly like the about section. Similarly to the previous step, include the photos title in the about title styling block, which should look like the following: <br><br>
+                    <b>
+                        .about h1, .photos h1 { <br>
+                            font-size: 40px; <br>
+                            font-family: sans-serif; <br>
+                        } <br>
+                        
+                    </b> <br><br>
+
+                    3. For the photo collage area, set the display to flex and make it flex-wrap so that the images will line up horizontally and adjust to the size of the screen. Also, add 20 pixels of margin on the top. The block of code should look like the following: <br><br>
+
+                    <b>
+                        .photos .collage { <br>
+                            display: flex; <br>
+                            flex-wrap: wrap; <br>
+                            margin-top: 20px; <br>
+                        } <br>
+                        
+                    </b> <br><br>
+
+                    4. For each individual image, add 20 pixels of padding to the right and bottom and set the width to 500 pixels. The block of the code should look like the following: <br><br>
+
+                    <b>
+                        .photos .collage img { <br>
+                            padding-right: 20px; <br>
+                            padding-bottom: 20px; <br>
+                            width: 500px; <br>
+                        } <br>
+                        
+                    </b>
+
+
+
+
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step9.1.png" width = "400px">
+                    <img src = "images/overview3.png" width = "400px">
+                </div>
+    
+            </div>
+            
+        </div>
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>10</h1>
+                <h2>Create Responsive Design</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>In the style.css file, you will create styling conditions for when the user’s screen size is smaller than a normal computer screen. Making styling conditions for mobile devices or any small screen device is known as responsive design.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                    1. Create a media query where you will make styling changes when the width of the user’s screen is less than 700 pixels. The query will look like the following: <br><br>
+                    <b>
+                        @media (max-width: 700px) { <br>
+                            <br>
+                        } <br>
+                        
+                    </b> <br><br>
+
+                    2. Inside of this media query, get rid of the navigation bar display and position all of the text and images of the website in the center. The blocks of code will include the following: <br><br>
+
+                    <b>
+                        .home nav ul { <br>
+                            display: none; <br>
+                        } <br>
+                        html { <br>
+                            text-align: center; <br>
+                            padding: 15px; <br>
+                        } <br>
+                    .photos .collage { <br>
+                            display: flex; <br>
+                            justify-content: center; <br>
+                    } <br>
+                    
+                    </b> <br><br>
+                    3. Set the name text size to 50 pixels, the job text to 30 pixels, and about description to 16 pixels. The blocks of code will include the following: <br><br>
+                    
+                    <b>
+                        .home h1 { <br>
+                            font-size: 50px; <br>
+                        } <br>
+                        .home h2 { <br>
+                            font-size: 30px; <br>
+                        } <br>
+                        .about p { <br>
+                            font-size: 16px; <br>
+                        } <br>
+                    
+                    </b>
+
+
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step10.1.png" width = "400px">
+                    <img src = "images/overview4.png" width = "400px">
+                    
+                </div>
+    
+            </div>
+            
+        </div>
+
+
+        <div class = "step hidden">
+
+            <div class = "title">
+
+                <h1>11</h1>
+                <h2>Host Website on GitHub</h2>
+    
+            </div>
+    
+            <br>
+    
+            <h3>You will need to create an account in GitHub so that you can publish your website. Although Replit can also be used to publish websites for free, the domain names are not as clean and customizable as GitHub.
+            </h3>
+    
+            <div class = "area">
+    
+                <div  class = "left">
+                    <p>
+                    1. Go to <a href = "https://github.com/" target = "_blank">github.com</a> <br><br>
+                    2. Click <b>Sign Up</b> <br><br>
+                    3. Follow the instructions to finish creating your account <br><br>
+                    4. On the home dashboard, click <b>Create New Repository</b> <br><br>
+                    5. Name the repository <b>michelleflores</b> <br><br>
+                    6. Click <b>Create</b> <br><br>
+                    7. On the repository page, click <b>Upload An Existing File</b><br><br>
+                    8. Upload the index.html file, style.css file, and images folder. You should already have the images folder downloaded. To download the html and css files, go back to Replit and in the file panel to the left, click on the three dots next to each file and click <b>Download</b> <br><br>
+                    9. Click <b>Commit Changes</b> <br><br>
+                    10. On the repository page, click <b>Settings</b>and then <b>Pages</b> <br><br>
+                    11. Under build and deployment, select the <b>Main</b> branch and then click <b>Save</b> <br><br>
+                    12. Wait a few minutes and then refresh the page. At the top of the screen under GitHub Pages, you should see your newly made URL to the website portfolio: <b>https://{username}.github.io/michelleflores</b>
+
+
+                    
+                    </p>
+    
+                </div>
+    
+                <div class = "right">
+                    <img src = "images/step11.1.png" width = "400px">
+                    <img src = "images/step11.2.png" width = "400px">
+                    <img src = "images/step11.3.png" width = "400px">
+                    <img src = "images/step11.4.png" width = "400px">
+                    
+                    
+                </div>
+    
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section class = "congrats hidden">
+        <h1>Congrats! <i class = "fa fa-graduation-cap"></i></h1><br>
+        <p>You have just created your first website from scratch using only HTML and CSS. Now, you can take the skills you have learned from this tutorial and apply them to the creation of your future websites, whether it is for business or personal use. </p>
+    </section>
+
+
+</body>
+</html>
